@@ -31,7 +31,7 @@ To run the container locally run:
 `docker run --gpus all -p 8000:8000 gemma-tx`
 
 To quick deploy onto cloud run from code directly:
-`gcloud run deploy gemma-tx --source . --region europe-west2 --port 8000 --allow-unauthenticated`
+`gcloud run deploy gemma-tx --source . --region europe-west2 --port 8000 --allow-unauthenticated --cpu-boost --timeout=300s`
 
 Alternatively, you can do this the manual way, by creating a repository (model registry) and then importing the image - then deploy the container in cloud run.
 
