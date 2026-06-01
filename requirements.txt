@@ -1,0 +1,9 @@
+torch
+transformers 
+accelerate
+fastapi
+unicorn
+pydantic
+uvicorn
+requests
+google-cloud-aiplatform
