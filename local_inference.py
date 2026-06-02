@@ -29,8 +29,8 @@ with open("tdc_prompts.json", "r") as f:
     tdc_prompts_json = json.load(f)
 
 # Example task and input
-task_name = "BBB_Martins"
-input_type = "{Drug SMILES}"
+task_name = "USPTO"#"BBB_Martins"
+input_type = "{Product SMILES}"#"{Drug SMILES}"
 drug_smiles = "CN1C(=O)CN=C(C2=CCCCC2)c2cc(Cl)ccc21"
 
 TDC_PROMPT = tdc_prompts_json[task_name].replace(input_type, drug_smiles)

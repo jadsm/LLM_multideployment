@@ -16,7 +16,10 @@ drug_smiles = "CN1C(=O)CN=C(C2=CCCCC2)c2cc(Cl)ccc21"
 TDC_PROMPT = tdc_prompts_json[task_name].replace(input_type, drug_smiles)
 
 # 4. Prepare the payload for the API
-url = "http://localhost:8000/generate"
+# locally
+# url = "http://localhost:8000/generate"
+# remotely
+url = "https://gemma-tx-915753635870.europe-west2.run.app"
 payload = {
     "prompt": TDC_PROMPT,
     "max_new_tokens": 50

@@ -9,12 +9,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY requirements.txt .
 
-
 # Install torch specifically for CPU to avoid CUDA dependency weight
 #RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
 #RUN pip install --no-cache-dir transformers safetensors accelerate fastapi uvicorn pydantic
 RUN pip install --no-cache-dir -r requirements.txt
-
 
 # Explicitly copy files
 COPY ./model /app/model/

@@ -7,3 +7,5 @@ pydantic
 uvicorn
 requests
 google-cloud-aiplatform
+sentencepiece
+tiktoken
